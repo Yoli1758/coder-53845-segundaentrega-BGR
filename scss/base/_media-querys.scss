@@ -1,0 +1,415 @@
+@media screen and (max-width:1250px) {
+    .container-contactanos {
+        // width: 80%;
+        padding: 10px 80px;
+
+
+    }
+
+
+
+}
+
+@media screen and (max-width:1050px) {
+    .navbar {
+        .d-flex {
+            div {
+                .form-control {
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width:1000px) {
+    .estilo img {
+        height: 500px;
+    }
+
+    .container-contactanos {
+        .caja {
+            .informacion {
+                h3 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:992px) {
+
+    .navbar {
+        .d-flex {
+            div {
+                .form-control {
+                    width: 320px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .estilo {
+        img {
+            height: 450px;
+
+        }
+
+        .estilo-1 {
+            h2 {
+                font-size: 18px;
+            }
+
+            h3 {
+                font-size: 14px;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width:880px) {
+    .estilo {
+        img {
+            height: 400px;
+        }
+
+        .estilo-1 {
+            p {
+                font-size: 18px;
+            }
+
+        }
+
+        .estilo-2 {
+            width: 200px;
+
+            h2 {
+                font-size: 15px;
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+            h3 {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 10px;
+                width: 150px;
+            }
+        }
+    }
+
+    .container-contactanos {
+
+        .caja {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "formulario"
+                "informacion"
+                "mapa";
+
+            .formulario {
+                .contenedor-formulario {
+
+                    .caja-input {
+                        width: 100%;
+
+                        input {
+                            &::placeholde {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    .caja-input2 {
+                        input {
+                            &::placeholder {
+                                font-size: 16px;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+            .informacion {
+                h3 {
+                    text-align: center;
+                }
+            }
+
+            .mapa {
+                min-height: 300px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:700px) {
+    .estilo {
+        img {
+            height: 350px;
+        }
+
+        .estilo-2 {
+            width: 180px;
+
+            img {
+                width: 120px;
+                height: 100px;
+            }
+        }
+
+        .estilo-3 {
+            h2 {
+                font-size: 20px;
+            }
+
+            h4 {
+                font-size: 15px;
+            }
+
+        }
+
+        .estilo-4 {
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 15px;
+            }
+
+            h4 {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width:680px) {
+
+    // pagina equipamiento
+    .contenedor {
+        margin: 10px;
+
+        input {
+            margin-left: 10px;
+        }
+
+        label {
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+
+    //end page equipamiento
+
+}
+
+@media screen and (max-width:600px) {
+    footer {
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "info"
+                "politicas"
+                "contactanos"
+                "datafiscal"
+                "pagos";
+
+            .grid-item-1 {
+                img {
+                    padding: 10px 50px;
+                    width: 50%;
+                    margin: auto;
+                    display: block;
+                }
+
+                p {
+
+                    font-size: 14px;
+                    width: 90%;
+                    margin-bottom: 0;
+                }
+            }
+
+            .grid-item-2 {
+                nav {
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+
+                    a {
+                        font-weight: 500;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .grid-item-3 {
+                h2 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    //pagina equipamiento
+    .contenedor {
+        input {
+            display: none;
+        }
+
+        label {
+            margin-left: 20px;
+            font-weight: 800;
+        }
+    }
+
+    //end page equipamiento
+}
+
+@media screen and (max-width:400px) {
+
+    .estilo {
+        img {
+            height: 300px;
+        }
+
+        .estilo-1 {
+            h2 {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+        }
+    }
+
+    .categorias-productos {
+        .contenedor-categorias {
+            .categorias {
+                margin: 5px;
+                height: 340px;
+
+                img {
+                    width: 310px;
+                    height: 337px;
+                }
+            }
+        }
+
+    }
+
+    .container-contactanos {
+        padding: 10px 50px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .main-nosotros {
+        .contenedor-valores {
+            .item-valores {
+                .card {
+
+                    &:hover {
+                        .card-info {
+                            right: -383%;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:700px) {
+    .main-nosotros {
+        .contenedor-valores {
+            .item-valores {
+                .card {
+                    .card-info {
+                        z-index: 90;
+                    }
+
+                    &:hover {
+                        .card-info {
+                            left: -190%;
+                            top: 0%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (min-width:991px) {
+    .nav-link {
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #832970;
+            width: 0;
+            height: 2px;
+            visibility: hidden;
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+    .nav-link.active {
+        &::before {
+            width: 100%;
+            visibility: visible;
+        }
+    }
+
+    .nav-link {
+        &:hover {
+            &::before {
+                width: 100%;
+                visibility: visible;
+            }
+        }
+
+
+    }
+}

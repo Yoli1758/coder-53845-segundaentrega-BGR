@@ -1,0 +1,23 @@
+@mixin prueba() {
+    color: black;
+    font-weight: 600;
+    position: relative;
+}
+@mixin flex ($flex,$justify,$align,$direccion,$wrap){
+
+display: $flex;
+justify-content: $justify;
+align-items: $align;
+flex-direction: $direccion;
+flex-wrap: $wrap;
+}
+
+%card-nosotros{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000000;
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+}

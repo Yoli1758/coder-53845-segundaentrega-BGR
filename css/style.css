@@ -1,63 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 /*RESET*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-    /*!----------------HEADER-------------*/
-header{
-    width: 100%;
+
+/*!----------------HEADER-------------*/
+
+/* estilos aplicados en la barra offcanvas navbar de Boostrap */
+.navbar {
+    background: rgb(98, 139, 165);
+    height: 80px;
+    margin: 0 15px;
+    border-radius: 16px;
+    padding: 0.5rem;
 }
-.color{
-    background-color: rgba(98, 139, 165, 0.886) ;
+
+.login-boton {
+    background-color: #832970;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s background-color;
 }
-.logo{
-    width: 120px;
-    padding-left: 5px;
+
+.login-boton:hover {
+    background-color: #8b4095;
+    color: #fff;
 }
-.nav-link{
-    padding-left: 2px;
-    font-size: 16px;
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link,
+.nav-cart {
+    color: black;
     font-weight: 600;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ccc;
+}
+
+.d-flex>div {
+    background-color: #ffff;
+    padding: 9px 22px 9px 16px;
+    border-radius: 30px;
+    border: 2px solid #cad3dc;
+
+}
+
+.form-control {
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    padding-left: 20px;
+    background-image: url("/img/lupa1.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    background-position: left center;
+    height: 20px;
+
 }
 
 
+
+/* End de estilos aplicados a la barra offcanvas de Boostrap */
 
 /*!------MAIN INDEX --------*/
 
 
-.control-estilo{
-    padding-top: 90px;
-}
-.estilo img{
+
+
+.estilo img {
     height: 550px;
 }
 
 /* slider 1 en carousel */
-.estilo-1{
+.estilo-1 {
     height: 50%;
     padding-bottom: 10px;
 }
-.estilo-1 h2{
+
+.estilo-1 h2 {
     font-size: 26px;
-} 
-.estilo-1 p{
+}
+
+.estilo-1 p {
     font-size: 50px;
 }
-.estilo-1 h3{
+
+.estilo-1 h3 {
     font-size: 20px;
-    display:inline-block;
+    display: inline-block;
     background-color: white;
     color: black;
 }
 
 /* slider 2 en carrousel */
 
-.estilo-2{
+.estilo-2 {
     background-color: rgba(236, 193, 149, 0.527);
     height: 100%;
     left: 0;
@@ -65,125 +129,187 @@ header{
     padding: 30px 45px;
     text-align: left;
     width: 300px;
-    
+
 }
-.estilo-2 h2{
+
+.estilo-2 h2 {
     font-size: 18px;
     text-align: left;
 }
-.estilo-2 img{
+
+.estilo-2 img {
     width: 200px;
     height: 200px;
 }
-.estilo-2 h3{
+
+.estilo-2 h3 {
     font-size: 20px;
 }
-.estilo-2 p{
+
+.estilo-2 p {
     font-size: 15px;
     text-align: justify;
 }
-.estilo-2 a{
+
+.estilo-2 a {
     text-decoration: none;
     background-color: #aadaaa;
     color: black;
-    font-weight:700 ;
+    font-weight: 700;
 
 }
 
 /* slider 3 en carousel */
 
-.estilo-3 h2{
+.estilo-3 h2 {
     background-color: red;
     display: inline-block;
     font-size: 60px;
 }
-.estilo-3 h3{
+
+.estilo-3 h3 {
     font-size: 18px;
 }
 
 /* slider 4 en carousel */
-.estilo-4{
+.estilo-4 {
     padding-bottom: 0;
     right: 10px;
     left: 10px;
     bottom: 5px;
 }
-.estilo-4 h2{
+
+.estilo-4 h2 {
     display: inline-block;
     width: 200px;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: red;
 }
-.estilo-4 h3{
+
+.estilo-4 h3 {
     font-size: 20px;
 }
-.estilo-4 h4{
+
+.estilo-4 h4 {
     font-size: 20px;
 }
-.estilo-4 p{
+
+.estilo-4 p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 
+.contenedor-bienvenido {
 
-/*SECCION CATEGORIA PRODUCTOS*/
-
-.categorias-productos .contenedor-categorias{
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
+
 }
 
-.categorias-productos h2{
+.contenedor-bienvenido h2 {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+    text-decoration-color: #ff000075;
+}
+
+.contenedor-bienvenido p {
+    /* width: 100%; */
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #008000;
+}
+
+.contenedor-bienvenido span {
+    background-color: #ffff00;
+    color: #ff0000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/*SECCION CATEGORIA PRODUCTOS*/
+main {
+    margin-top: 82px;
+
+
+}
+
+
+.categorias-productos h2 {
     font-size: 20px;
     text-align: center;
     margin-top: 15px;
     color: pink;
+
 }
-.categorias-productos h2::before,.categorias-productos h2::after{
+
+.categorias-productos h2::before,
+.categorias-productos h2::after {
     content: "------";
     color: currentColor;
 }
-.categorias-productos h2:hover{
+
+.categorias-productos h2:hover {
     color: red;
 }
-.categorias{
-    border: 1px solid #ffffff;
-    height: 401px;
+
+.contenedor-categorias {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.categorias {
+    border: 1px solid greenyellow;
+    height: 402px;
     text-align: center;
     margin: 15px;
 }
-.categorias img{
+
+.categorias img {
     width: 350px;
-    height: 401px;
+    height: 400px;
 }
-.info-categorias{
+
+.info-categorias {
     transform: translateY(-200px);
 }
-.info-categorias h3{
+
+.info-categorias h3 {
     font-size: 32px;
     color: #ffdead;
 }
-.info-categorias a{
+
+.info-categorias a {
     text-decoration: none;
     background-color: #ffffff;
     color: #808080;
     padding: 5px;
-    border-radius: 4px; 
+    border-radius: 4px;
 }
-.info-categorias a:hover{
+
+.info-categorias a:hover {
     color: red;
-    background-color: gray; 
+    background-color: gray;
 }
 
 
 /*---SECCION DE OFERTAS DE PRODUCTOS-----*/
+.ofertas-productos {
+    /* background-color: green; */
+    margin: 0 10px;
+}
 
-.contenedor-ofertas{
+.contenedor-ofertas {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -191,24 +317,27 @@ header{
     margin-bottom: 25px;
 }
 
-.ofertas-productos h2{
+.ofertas-productos h2 {
     font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.ofertas{
+
+.ofertas {
     border: 2px solid gray;
     width: 250px;
     height: 305px;
     text-align: center;
     margin: 10px;
 }
-.ofertas  img{
+
+.ofertas img {
     width: 234px;
     height: 234px;
 }
-.ofertas h3{
+
+.ofertas h3 {
     background-color: #ff0000;
     font-size: 25px;
     color: #ffffff;
@@ -217,28 +346,33 @@ header{
     border-radius: 5px;
     transform: translateX(-20px) translateY(-180px);
 }
-.descrip-ofertas{
+
+.descrip-ofertas {
     transform: translateY(-40px);
     background-color: #f4a56065;
 }
-.descrip-ofertas a{
+
+.descrip-ofertas a {
     text-decoration: none;
 }
-.descrip-ofertas p{
+
+.descrip-ofertas p {
     margin-bottom: 0;
     color: black;
     font-weight: 600;
     font-size: 14px;
-    text-align:start;
+    text-align: start;
     padding-left: 10px;
 }
-.descrip-ofertas h4{
+
+.descrip-ofertas h4 {
     color: blue;
     font-size: 14px;
 }
-#valor-ant{
+
+#valor-ant {
     color: rgba(128, 128, 128, 0.514);
-    text-decoration:line-through;
+    text-decoration: line-through;
     margin-right: 5px;
 }
 
@@ -248,256 +382,748 @@ header{
 /*----------------PAGINA PRODUCTOS--------------------*/
 
 /*!------MAIN PRODUCTOS------*/
-
-.contenedor-productos{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+/* pagina de productos  */
+.productos-totales {
+    /* background-color: #ccc; */
+    margin: 0 10px;
+    /* border: 1px solid #bc8811; */
+    margin-bottom: 20px;
 }
 
-.producto{
-    width: 100%;
+.productos-totales h2 {
+    font-size: 25px;
+    background-color: #cccccc3c;
+    padding-top: 15px;
+    padding-left: 25px;
+    align-items: left;
+    font-weight: 600;
+}
+
+.contenedor-productos {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.producto {
+    border: 2px solid gray;
+    width: 250px;
+    height: 400px;
+    text-align: center;
     margin: 20px;
     border-radius: 6px;
-    background: #ffff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    background: antiquewhite;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 300ms ease;
 }
-.producto:hover{
+
+
+.producto img {
+    width: 246px;
+    height: 234px;
+}
+
+.producto .info-productos {
+    /* border: 1px solid tomato; */
+    padding-top: 10px;
+    background-color: antiquewhite;
+    width: 247px;
+    height: 130px;
+
+}
+
+/* end productos */
+.producto .info-productos a {
+
+    text-align: center;
+    text-decoration: none;
+}
+
+.producto .info-productos h2 {
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-top: 0;
+    background-color: antiquewhite;
+}
+
+.producto .info-productos p {
+    color: red;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+
+
+.producto:hover {
     box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-4%);
 }
 
-.producto img{
-    width: 100%;
-    height: 200%;
-}
 
-.producto .info-producto{
-    padding: 15px;
-    text-align: center;
-}
-.contenedor-productos a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-}
-.producto .descuento{
-    padding: 15px;
-    text-align: center;
-}
-.descuento h2{
-    font-size: 15px;
-    color: #ff0000;
-}
-.descuento h3{
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-.producto .info-producto h2{
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.carrito{
+.carrito {
     background-color: #000000;
-    color: #ffffff;
+    margin-left: 45px;
     padding: 5px;
     border-radius: 4px;
+    width: 160px;
+
+    /* transform: translateX(40px) translateY(65px); */
 }
 
-.carrito:hover{
-    color: yellow;
+.carrito a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.carrito:hover {
+
+
     background-color: green;
 }
+
 /*----------------PAGINA EQUIPAMIENTO------------------*/
 
 /*!------MAIN EQUIPAMIENTO----*/
 
-.indumentaria-accesorios img{
-    width: 250px;
-    height: 312px;
+
+
+
+/* estilos equipamiento */
+/* 
+select{
+    position: absolute;
+    transform: translate(50%,50%);
+    top: 10px;
+    left: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 300px;
+    padding: 6px 20px;
+    font-family: "Poppins",sans-serif;
+    background-color: #3a3b83;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: 3px solid #3a3b83;
+    border-radius: 5px;
+    background-image: url("/img/flecha-down.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 265px 2px;
+    outline: none;
+    box-shadow: 0 0 15px rgba(20,20,30,0.25);
 }
-.contenedor-indumentaria{
-    width: 100%;
+
+select option{
+background-color: #3a3b83;
+letter-spacing: 1.2px;
+font-weight: 400;
+font-size: 18px;
+}
+
+select::-ms-expand{
+    display: none;
+}
+select:hover{
+    border: 3px solid #cfd5e6;
+}
+.selected{
+    display: none;
+} */
+
+.contenedor {
+    background-color: rgba(247, 243, 129, 0.7);
+    margin: 20px;
+    border: 4px solid #e6cf09;
+    box-shadow: 10px 10px 5px #832970;
+}
+
+.contenedor label {
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.contenedor input {
+    margin-left: 20px;
+}
+
+
+#indumentaria-accesorios:checked~.galeria-imagenes .ropa,
+#indumentaria-accesorios:checked~.galeria-imagenes .articulos-deportivos {
+    display: none;
+}
+
+#ropa:checked~.galeria-imagenes .indumentaria-accesorios,
+#ropa:checked~.galeria-imagenes .articulos-deportivos {
+    display: none;
+}
+
+#articulos-deportivos:checked~.galeria-imagenes .ropa,
+#articulos-deportivos:checked~.galeria-imagenes .indumentaria-accesorios {
+    display: none;
+}
+
+/* seccion indumentaria y accesorios */
+.indumentaria-accesorios {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.contenedor-accesorios {
+    /* padding-top: 5px; */
+    border: 2px solid #808080;
+    text-align: center;
+    background: #ffff;
+    width: 250px;
+    height: 310px;
+
+    margin: 10px;
+
+}
+
+.contenedor-accesorios img {
+    margin: 2px;
+    width: 240px;
+
+    height: 215px;
+    border: 2px solid tomato;
+    transition: .5s ease-in-out;
+}
+
+.contenedor-accesorios img:hover {
+    scale: 1.2;
+}
+
+.contenedor-accesorios .descripcion {
+    width: 247px;
+    height: 89px;
+    background-color: #cad3dc;
+
+}
+
+.contenedor-accesorios .descripcion p {
+
+    margin-bottom: 2px;
+    color: black;
+    font-weight: 700;
+    font-size: 12px;
     text-align: center;
 
 }
-.contenedor-indumentaria a{
+
+.contenedor-accesorios .descripcion h3 {
+    font-size: 18px;
+    color: #832970;
+    margin-bottom: 0;
+}
+
+.contenedor-accesorios .boton {
+
+    font-size: 18px;
     text-decoration: none;
-    font-weight: 700;
-}
-.indumentaria-accesorios{
     display: inline-block;
-    background: #ffff;
-    border: 1px solid #808080;
-    margin: 15px;
-    cursor: default;
-}
-.indumentaria-accesorios .descripcion{
-    background-color: #25d366;
-    border: 2px solid #000000
+    width: 80px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+   
+
 }
 
-.descripcion .carrito{
-    font-size: 12px;
-}
-
-.contenedor-equipos{
-    width: 100%;
-    text-align: center; 
-    margin-bottom: 20px;
-}
-.equipos{
-    display: inline-block;
-    background: #ffff;
-    border: 1px solid #808080;
-    margin: 15px;
-    cursor: default;  
-}
-.equipos img{
-    width: 234px;
-    height: 280px;
-}
-
-.equipos a{
-    text-decoration: none;
-    font-size: 14px;
+.contenedor-accesorios .boton:hover {
+    background-color: tomato;
+    color: black;
     font-weight: 600;
+    border: 2px solid black;
 }
-.equipos .descripcion{
+
+/* end seccion indumentaria y accesorios */
+
+/* seccion de ropa */
+.ropa {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.contenedor-ropa {
+    
+    border: 2px solid #808080;
+    text-align: center;
+    background: #ffff;
+    width: 250px;
+    height: 310px;
+    margin: 10px;
+
+}
+
+.contenedor-ropa img {
+    margin: 2px;
+    width: 240px;
+
+    height: 215px;
+    border: 2px solid green;
+    transition: .5s ease-in-out;
+}
+
+.contenedor-ropa img:hover {
+    scale: 1.2;
+}
+
+.contenedor-ropa .descripcion {
+    width: 247px;
+    height: 89px;
+
     background-color: #dbdbdb;
-    border: 2px solid black
+
 }
+
+.contenedor-ropa .descripcion p {
+
+    margin-bottom: 2px;
+    color: black;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.contenedor-ropa .descripcion h3 {
+    font-size: 18px;
+    color: #832970;
+    margin-bottom: 0;
+}
+
+.contenedor-ropa .boton {
+
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    width: 80px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    /* padding-bottom: -10px; */
+
+}
+
+.contenedor-ropa .boton:hover {
+    background-color: #e6cf09;
+    color: black;
+    font-weight: 600;
+    border: 2px solid black;
+}
+
+/* end seccion de ropa */
+
+/* seccion articulos deportivos */
+.articulos-deportivos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.contenedor-artdeportivos {
+    /* padding-top: 5px; */
+    border: 2px solid #808080;
+    text-align: center;
+    background: #ffff;
+    width: 250px;
+    height: 310px;
+    margin: 10px;
+
+}
+
+.contenedor-artdeportivos img {
+    margin: 2px;
+    width: 240px;
+    height: 215px;
+    border: 2px solid tomato;
+    transition: .5s ease-in-out;
+}
+
+.contenedor-artdeportivos img:hover {
+    scale: 1.2;
+}
+
+.contenedor-artdeportivos .descripcion {
+    width: 247px;
+    height: 89px;
+    background-color: #aadaaa;
+
+}
+
+.contenedor-artdeportivos .descripcion p {
+
+    margin-bottom: 2px;
+    color: black;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.contenedor-artdeportivos .descripcion h3 {
+    font-size: 18px;
+    color: #832970;
+    margin-bottom: 0;
+}
+
+.contenedor-artdeportivos .boton {
+
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    width: 80px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    /* padding-bottom: -10px; */
+
+}
+
+.contenedor-artdeportivos .boton:hover {
+    background-color: antiquewhite;
+    color: black;
+    font-weight: 600;
+    border: 2px solid black;
+}
+
 /*----------------PAGINA NOSOTROS-----------------------*/
 
 /*!-----MAIN NOSOTROS-----------*/
 
-.main-nosotros{
+.main-nosotros {
     background: rgb(250, 244, 239);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
 }
 
-.main-nosotros h1{
+.texto {
     text-align: center;
+
+}
+
+.main-nosotros .texto h2 {
+
+    display: inline-block;
+    font-size: 45px;
     font-style: italic;
     font-weight: 600;
-    font-family:'Times New Roman', Times, serif;
-    color: #ff0000;
+    font-family: "Open+Sans", sans-serif;
+    background: linear-gradient(indigo 60%, hotpink 40%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.main-nosotros article{
+
+.text1 {
+    animation: bounce1 3s alternate infinite ease-in-out;
+}
+
+.text2 {
+    animation: bounce2 3s alternate infinite ease-in-out;
+}
+
+.text3 {
+    margin-left: 10px;
+    animation: bounce3 3s alternate infinite ease-in-out;
+}
+
+@keyframes bounce1 {
+    0% {
+        transform: translateX(-40%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes bounce2 {
+    0% {
+        transform: translateY(-60%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes bounce3 {
+    0% {
+        transform: translateX(40%);
+    }
+
+    100% {
+        transform: translateX(-10%);
+    }
+}
+
+.main-nosotros .somos {
     margin: 20px auto;
     max-width: 1200px;
     padding: 20px;
-    font-family: 'Times New Roman', Times, serif;
     background: #fff;
 }
 
-.main-nosotros article p{
-    margin-top: 20px;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 300;
+.main-nosotros .somos h2 {
+    font-size: 22px;
+    color: #832970;
+    font-weight: bold;
 }
 
-.fa-star{
-    color: red;
+.main-nosotros .somos p {
+    font-size: 16px;
+    text-align: justify;
+    /* line-height: 1; */
+
 }
 
-.main-nosotros article ul li{ 
-    text-decoration:underline;
-    color: #000000;
-    display: inline-block;
-    margin-top: 10px;
+.contenedor-valores {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    margin: 30px auto;
+    max-width: 1200px;
+    padding-left: 15px;
+
+    /* padding: 20px; */
+    background: #fff;
 }
+
+.contenedor-valores h2 {
+    font-size: 22px;
+    color: #832970;
+    font-weight: bold;
+}
+
+.contenedor-valores p {
+    margin-bottom: 0;
+}
+
+.item-valores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    min-height: 50vh;
+    align-items: center;
+    /* background-color: #d6d78a; */
+
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 300px;
+}
+
+.card .card_landing {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background-image: linear-gradient(transparent 80%, #000), url(/img/calidad.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+}
+
+.card .card_landing h6 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.card .card_info {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background: #fff;
+    z-index: 900;
+    box-shadow: 0 5px 10px #000;
+    transition: 0.5s;
+}
+
+.card_info p {
+    padding: 2px 0;
+    border-bottom: solid 1px #bc8811;
+    font-size: 20px;
+    font-weight: 700;
+    color: #bc8811;
+    margin-bottom: 0;
+}
+
+.card_info article {
+    margin-top: 15px;
+    font-size: 12px;
+    background: #efdcdc5c;
+}
+
+/* segunda tarjeta */
+.card .card_landing1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background-image: linear-gradient(transparent 80%, #000), url(/img/innovacion.jpeg);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+}
+
+.card .card_landing1 h6 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+/* tercera tarjeta */
+.card .card_landing2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background-image: linear-gradient(transparent 80%, #000), url(/img/desarrollo.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+}
+
+.card .card_landing2 h6 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: white;
+}
+
 
 /*----------------PAGINA CONTACTO-----------------------*/
 
 /*!-----MAIN CONTACTO----------*/
 
-.container-contactanos{
+.container-contactanos {
     position: relative;
     width: 100%;
     padding: 10px 200px;
 }
-.container-contactanos .titulo{
+
+.container-contactanos h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
-}
-.container-contactanos .titulo h2{
-    color: black;
+    color: #832970;
     font-weight: 500;
 }
-.formulario{
-    grid-area: formulario;
-}
-.informacion{
-    grid-area: informacion;
-}
-.mapa{
-    grid-area: mapa;
-}
 
-.caja{
+.caja {
     position: relative;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 5fr 4fr;
-    grid-template-areas: 
-    "formulario informacion"
-    "formulario mapa";
+    grid-template-areas:
+        "formulario informacion"
+        "formulario mapa";
     grid-gap: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
 
 }
-.contacto{
+
+
+.formulario {
+    grid-area: formulario;
     padding: 30px;
     background: rgb(175, 142, 142);
     box-shadow: 0 5px 45px rgba(95, 95, 87, 0.2);
 }
-.contacto h3{
+
+.formulario h3 {
     color: rgb(15, 6, 141);
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 5px;
 }
-/* formulario */
-.contenedor-formulario{
-    position: relative;
-    width: 100%;
+
+.contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+
 
 }
-.contenedor-formulario .linea{
-    display: flex;
-    gap: 15px;
-}
-.caja-input{
+
+.caja-input {
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
     width: 50%;
 }
 
-.contenedor-formulario .linea2 .caja-input{
-    width: 100%;
-}
-
-.caja-input span{
+.caja-input span {
     color: rgb(27, 17, 17);
     margin-top: 5px;
     margin-bottom: 5px;
     font-weight: 600;
 }
-.caja-input input{
+
+.caja-input input {
     padding: 10px;
     font-size: 14px;
     outline: none;
     border: 2px solid rgb(54, 21, 21);
 }
-.caja-input textarea{
+
+.caja-input input::placeholder {
+    color: rgba(178, 178, 187, 0.781);
+}
+
+
+.caja-input2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.caja-input2 span {
+    color: rgb(27, 17, 17);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
+.caja-input2 textarea {
+
     padding: 10px;
     font-size: 14px;
     outline: none;
@@ -506,196 +1132,284 @@ header{
     min-height: 200px;
     margin-bottom: 5px;
 }
-.caja-input input[type="submit"]{
+
+.caja-input2 textarea::placeholder {
+    color: rgba(178, 178, 187, 0.781);
+}
+
+.caja-input2 input {
     background-color: rgb(15, 6, 134);
     color: white;
     border: none;
     font-size: 14px;
-    max-width: 120px;
+    max-width: 100px;
     font-weight: 600;
     cursor: pointer;
     border-radius: 5px;
 }
 
-.caja-input ::placeholder{
-    color: rgba(178, 178, 187, 0.781);
+
+.informacion {
+    grid-area: informacion;
+    background: rgb(212, 159, 159);
+    padding: 30px;
+    align-items: center;
+    /* margin-bottom: 10px; */
 }
 
-.informacion{
-    background: rgb(212, 159, 159);
+.informacion h3 {
+    color: rgb(13, 7, 97);
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 25px;
 }
-.informacion .caja-info div{
+
+
+.caja-info {
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.informacion .caja-info div span{
+.info,
+.info1 {
+    display: flex;
+    width: 202px;
+
+
+    align-items: center;
+
+}
+
+.info span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 30px;
     height: 30px;
     color: black;
     background-color: sandybrown;
+    font-size: 14px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.info1 span {
+
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    min-width: 30px;
+    height: 30px;
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+    background-color: sandybrown;
     font-size: 14px;
     border-radius: 50%;
     margin-right: 10px;
+
 }
-.informacion .caja-info div p{
-    font-size: 14px;
-    font-weight: 700;
-}
-.informacion .caja-info div a{
+
+.caja-info .info a {
     text-decoration: none;
     color: black;
     font-weight: 700;
     font-size: 14px;
 }
-.redes-sociales{
-    margin-top: 10px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    
+
+.caja-info .info1 p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0;
+
 }
-.redes-sociales li{
+
+.redes-sociales {
+    margin-top: 50px;
+    display: flex;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.redes-sociales li {
     list-style: none;
     margin: 10px;
 }
-.redes-sociales li a{
+
+.redes-sociales li a i {
     font-size: 18px;
     color: #ccc;
+    transition: 0.3s ease-in-out;
 }
-.redes-sociales li a:hover{
+
+.redes-sociales li a i:hover {
     color: white;
 }
-.mapa{
+
+.mapa {
+    grid-area: mapa;
     padding: 5px;
+    border: 2px solid #cccc;
 }
-.mapa iframe{
+
+.mapa iframe {
+
     width: 100%;
     height: 100%;
 }
 
 
 /*?------FOOTER-----------*/
-footer{
+footer {
     background-color: #f2f2f2;
-    color:#000000;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
-    padding-top: 5px; 
+    padding-top: 5px;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,auto);
-    grid-template-areas: 
-    "info           politicas       datafiscal"
-    "contactanos    contactanos     contactanos"
-    "pagos          pagos           pagos";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "info           politicas       datafiscal"
+        "contactanos    contactanos     contactanos"
+        "pagos          pagos           pagos";
     grid-template-rows: 140px 90px 40px;
 }
 
-.grid-item-1{
-    grid-area:info;
+.grid-item-1 {
+    grid-area: info;
 }
 
-.grid-item-1 img{
+.grid-item-1 img {
     width: 80px;
     padding-left: 10px;
 }
-.grid-item-1 p{
+
+.grid-item-1 p {
     margin: 10px;
     font-size: 12px;
     width: 200px;
     text-align: justify;
-} 
-
-.grid-item-2{
-    grid-area:politicas;
 }
-.footer-menu a{
+
+.grid-item-2 {
+    grid-area: politicas;
+}
+
+.grid-item-2 nav {
     display: flex;
     flex-direction: column;
-} 
-.grid-item-2 nav a{
-    text-decoration:underline;
-    color:#000000;
-    text-decoration-color: #9acd32;
-    text-decoration-thickness: 2px;
+}
+
+.grid-item-2 nav a {
+    text-decoration: underline;
+    color: #000000;
+    text-decoration-color: #832970;
+    text-decoration-thickness: 1.5px;
     font-weight: 600;
     line-height: 1.5;
     padding-left: 10px;
 }
-.grid-item-3{
-    grid-area: contactanos;
+
+.grid-item-2 nav a:hover {
+
+    color: #ccc;
 }
-.grid-item-3 h2{
+
+.grid-item-3 {
+    grid-area: contactanos;
+    padding-left: 10px;
+
+
+}
+
+.grid-item-3 h2 {
     padding-top: 5px;
     font-size: 16px;
-    padding-left: 10px;
+
+
 }
-.grid-item-3 i{
+
+.grid-item-3 nav a i {
     font-size: 20px;
-    padding-left: 10px; 
-    margin-top: 5px;
+    padding-left: 5px;
 }
-.facebook{
+
+.fa-square-facebook {
+
+    padding-left: 0;
     color: blue;
 }
-.instagram{
-    color:red;
+
+.fa-square-instagram {
+    color: red;
 }
-.correo{
+
+.fa-square-envelope {
     color: goldenrod;
 }
-.llamada{
+
+.fa-phone {
     color: black;
 }
-.grid-item-3 h3{
+
+.grid-item-3 h3 {
     font-size: 16px;
-    padding-left: 10px;
+    margin-top: 15px;
     display: inline-block;
+
 }
-.medioe{
-    margin-left: -12px; 
+
+.fa-truck-fast {
+    font-size: 16px;
     color: blue;
 }
-.grid-item-4{
+
+.grid-item-4 {
     grid-area: datafiscal;
 }
-.grid-item-4 img{
+
+.grid-item-4 img {
     width: 50px;
     padding-left: 10px;
 }
-.grid-item-5{
+
+.grid-item-5 {
     grid-area: pagos;
 }
-.grid-item-5 hr{
+
+.grid-item-5 hr {
     margin: 0;
     border-top: 4px solid #ccc;
 }
-.grid-item-5 nav{
+
+.grid-item-5 nav {
     text-align: center;
 }
-.grid-item-5  i{
+
+.grid-item-5 nav i {
     margin-top: 5px;
     font-size: 25px;
     padding-left: 5px;
 }
-.whatsapp{
+
+.whatsapp {
     position: fixed;
     bottom: 40px;
     right: 40px;
     color: #25d366;
-}
-.fa-whatsapp{
     font-size: 60px;
 }
-.whatsapp:hover{
+
+.whatsapp:hover {
     color: #28e86e;
 }
 
@@ -704,394 +1418,575 @@ footer{
 
 /* diseño responsive */
 
-@media screen and (max-width:1000px){
-    .estilo img{
+
+@media screen and (max-width:1050px) {
+    .form-control {
+
+        width: 150px;
+
+
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .estilo img {
         height: 500px;
     }
-    .estilo-1{
+
+    .estilo-1 {
         height: 60%;
     }
-    .estilo-1 h2{
+
+    .estilo-1 h2 {
         font-size: 16px;
     }
-    .estilo-1 p{
+
+    .estilo-1 p {
         font-size: 20px;
     }
-    .estilo-2{
-    padding: 20px 30px;
+
+    .estilo-2 {
+        padding: 20px 30px;
         text-align: left;
         width: 210px;
     }
-    .estilo-2 h2{
+
+    .estilo-2 h2 {
         font-size: 16px;
         text-align: left;
         width: 160px;
     }
-    .estilo-2 img{
+
+    .estilo-2 img {
         width: 150px;
         height: 100px;
     }
-    .estilo-2 h3{
+
+    .estilo-2 h3 {
         width: 180px;
         font-size: 16px;
     }
-    .estilo-2 p{
-        font-size:14px ;
+
+    .estilo-2 p {
+        font-size: 14px;
         margin-bottom: 5px;
     }
-    .estilo-3 h2{
+
+    .estilo-3 h2 {
         background-color: red;
         display: inline-block;
         font-size: 45px;
     }
-    .estilo-3 h3{
+
+    .estilo-3 h3 {
         font-size: 16px;
     }
-    .estilo-3 h4{
+
+    .estilo-3 h4 {
         font-size: 20px;
     }
-    .nav-link{
+
+    .nav-link {
         padding-left: 1px;
         font-size: 14px;
         font-weight: 600;
     }
-    .nav-item form{
+
+    .nav-item form {
         width: 180px;
     }
 }
 
-@media screen and (max-width:920px){
-    .container-contactanos{
+@media screen and (max-width:992px) {
+    .form-control {
+
+        width: 320px;
+
+
+    }
+
+}
+
+@media screen and (max-width:920px) {
+    .container-contactanos {
         width: 100%;
         padding: 10px 100px;
     }
-    .contactonos{
+
+    .contactonos {
         padding: 10px;
     }
-    .caja{
+
+    .caja {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "formulario"
-                            "informacion"
-                                "mapa";
+            "informacion"
+            "mapa";
     }
-    .mapa{
+
+    .mapa {
         min-height: 300px;
     }
-    .contenedor-formulario .linea{
+
+    .contenedor-formulario .linea {
         display: flex;
         gap: 0;
         flex-direction: column;
     }
-    .caja-input{
-    width: 100%;
+
+    .caja-input {
+        width: 100%;
     }
-    .contacto{
+
+    .contacto {
         padding: 20px;
     }
-    .estilo img{
+
+    .estilo img {
         height: 480px;
     }
-    .estilo-2 img{
+
+    .estilo-2 img {
         height: 100px;
     }
-    .estilo-2 h3{
+
+    .estilo-2 h3 {
         font-size: 15px;
     }
-    .estilo-2 p{
+
+    .estilo-2 p {
         margin-bottom: 5px;
         font-size: 13px;
     }
-    .estilo-3 h2{
-    font-size: 40px;
+
+    .estilo-3 h2 {
+        font-size: 40px;
     }
-    .estilo-3 h3{
+
+    .estilo-3 h3 {
         font-size: 15px;
     }
-    .estilo-3 h4{
+
+    .estilo-3 h4 {
         font-size: 18px;
     }
-    .nav-link{
+
+    .nav-link {
         padding-left: 1px;
         font-size: 13px;
         font-weight: 600;
     }
-    .nav-item form{
+
+    .nav-item form {
         width: 140px;
     }
 }
 
-@media screen and (max-width:800px){
-    .estilo img{
+@media screen and (max-width:800px) {
+    .estilo img {
         height: 450px;
     }
-    .estilo-1{
+
+    .estilo-1 {
         height: 60%;
     }
-    .estilo-1 h2{
+
+    .estilo-1 h2 {
         font-size: 16px;
     }
-    .estilo-1 p{
+
+    .estilo-1 p {
         font-size: 20px;
     }
-    .estilo-2{
+
+    .estilo-2 {
         padding: 20px 15px;
         text-align: left;
-        width: 200px; 
+        width: 200px;
     }
-    .estilo-2 img{
+
+    .estilo-2 img {
         width: 150px;
         height: 100px;
     }
-    .estilo-2 h3{
+
+    .estilo-2 h3 {
         font-size: 15px;
     }
-    .estilo-2 p{
+
+    .estilo-2 p {
         margin-bottom: 5px;
         font-size: 13px;
     }
 
-    .estilo-3 h2{
+    .estilo-3 h2 {
         font-size: 25px;
     }
-    .estilo-3 h3{
+
+    .estilo-3 h3 {
         font-size: 12px;
     }
-    .estilo-4 h2{
+
+    .estilo-4 h2 {
         padding-top: 2px;
         padding-bottom: 2px;
         width: 180px;
     }
-    .estilo-4 h3{
+
+    .estilo-4 h3 {
         font-size: 16px;
     }
-    .estilo-4 h4{
+
+    .estilo-4 h4 {
         font-size: 16px;
-    } 
-    .nav-link{
+    }
+
+    .nav-link {
         padding-left: 1px;
         font-size: 12px;
         font-weight: 600;
     }
-    .nav-item form{
+
+    .nav-item form {
         width: 120px;
     }
-    .nav-item form input{
+
+    .nav-item form input {
         font-size: 11px;
     }
 }
 
-@media screen and (max-width:767px){
-    .nav-link{
+@media screen and (max-width:767px) {
+    .nav-link {
         padding-left: 1px;
         font-size: 14px;
         font-weight: 600;
     }
-    .nav-item form{
+
+    .nav-item form {
         width: 50%;
     }
-    .nav-item form input{
+
+    .nav-item form input {
         font-size: 14px;
     }
 }
 
-@media screen and (max-width:680px){
-    .container-contactanos{
+@media screen and (max-width:680px) {
+    .container-contactanos {
         width: 100%;
         padding: 10px 50px;
     }
+
+    .contenedor {
+
+        margin: 10px;
+
+    }
+
+    .contenedor label {
+        font-size: 12px;
+        font-weight: 600;
+
+    }
+
+    .contenedor input {
+        margin-left: 10px;
+        /* display: none; */
+    }
 }
 
-@media screen and (max-width:600px){
-    .estilo img{
+@media screen and (max-width:600px) {
+    .estilo img {
         height: 350px;
     }
-    .estilo-2{
+
+    .estilo-2 {
         padding: 10px 10px;
         text-align: left;
-        width: 160px; 
+        width: 160px;
     }
-    .estilo-2 h2{
+
+    .estilo-2 h2 {
         font-size: 14px;
         width: 140px;
     }
-    .estilo-2 h3{
+
+    .estilo-2 h3 {
         font-size: 13px;
     }
-    .estilo-2 p{
+
+    .estilo-2 p {
         font-size: 12px;
     }
-    .estilo-2 img{
+
+    .estilo-2 img {
         width: 120px;
         height: 80px;
     }
-    .estilo-3 h2{
+
+    .estilo-3 h2 {
         font-size: 20px;
     }
-    .estilo-3 h4{
+
+    .estilo-3 h4 {
         width: 400px;
         font-size: 16px;
     }
-    .estilo-3 p{
+
+    .estilo-3 p {
         margin-bottom: 0;
         width: 400px;
         font-size: 12px;
     }
-    .estilo-4 h2{
+
+    .estilo-4 h2 {
         padding-top: 0;
         padding-bottom: 0;
     }
-    .estilo-4 p{
+
+    .estilo-4 p {
         display: none;
     }
-    .grid-container{
+
+    .grid-container {
         display: grid;
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-template-areas: 
-        "info"
-        "politicas" 
-        "contactanos"  
-        "datafiscal" 
-        "pagos";
+        grid-template-areas:
+            "info"
+            "politicas"
+            "contactanos"
+            "datafiscal"
+            "pagos";
     }
-    .grid-item-1 img{
-        padding: 10px 50px; 
-        width: 70%;
+
+    .grid-item-1 img {
+        padding: 10px 50px;
+        width: 50%;
         height: 65%;
         margin-left: 80px;
     }
-    .grid-item-1 p{
+
+    .grid-item-1 p {
         margin-top: 10px;
         font-size: 14px;
         width: 90%;
         margin-bottom: 0;
     }
-    .grid-item-2 nav a{
-        text-decoration:underline;
-        
+
+    .grid-item-2 nav a {
+        text-decoration: underline;
+
         text-decoration-color: #ccc;
         text-decoration-thickness: 2px;
         font-weight: 500;
-        
+
     }
-    .grid-item-3 h2{
-        display:none;
+
+    .grid-item-3 h2 {
+        display: none;
     }
-    .grid-item-3 nav{
+
+    .grid-item-3 nav {
         margin-top: 20px;
-    };
+    }
+
+    ;
 }
 
-@media screen and ( max-width:500px){
-    .estilo img{
+@media screen and (max-width:500px) {
+    .estilo img {
         height: 300px;
     }
-    .estilo-2{
+
+    .estilo-2 {
         padding: 5px 15px;
         text-align: left;
         width: 150px;
     }
-    .estilo-2 h2{
+
+    .estilo-2 h2 {
         font-size: 12px;
         width: 120px;
         text-align: left;
     }
-    .estilo-2 img{
+
+    .estilo-2 img {
         width: 100px;
         height: 50px;
         padding-left: 0;
     }
-    .estilo-2 h3{
+
+    .estilo-2 h3 {
         font-size: 12px;
         width: 130px;
     }
-    .estilo-2 p{
+
+    .estilo-2 p {
         line-height: 1;
         margin-bottom: 5px;
         font-size: 12px;
     }
-    .estilo-3{
+
+    .estilo-3 {
         left: 20px;
         padding-bottom: 0;
-    } 
-    .estilo-3 h4{
+    }
+
+    .estilo-3 h4 {
         width: 350px;
         font-size: 14px;
     }
-    .estilo-3 p{
+
+    .estilo-3 p {
         margin-bottom: 0;
         width: 350px;
         font-size: 12px;
     }
-    .grid-item-1 p{
+
+    .grid-item-1 p {
         margin-bottom: 50px;
+    }
+
+    .contenedor input {
+
+        display: none;
+    }
+
+    .contenedor label {
+        margin-left: 20px;
+        font-weight: 800;
     }
 }
 
-@media screen and (max-width:400px){
-    .estilo img{
+@media screen and (max-width:400px) {
+    .estilo img {
         height: 300px;
     }
-    .estilo-1 h2{
+
+    .estilo-1 h2 {
         font-size: 16px;
     }
-    .estilo-1 p{
+
+    .estilo-1 p {
         font-size: 16px;
         line-height: 1;
     }
-    .estilo-1 h3{
+
+    .estilo-1 h3 {
         font-size: 14px;
     }
-    .estilo-2{
+
+    .estilo-2 {
         padding: 5px 5px;
         text-align: left;
         width: 100px;
     }
-    .estilo-2 h2{
+
+    .estilo-2 h2 {
         font-size: 10px;
         width: 100px;
     }
-    .estilo-2 img{
+
+    .estilo-2 img {
         width: 80px;
-        height:50px ;
+        height: 50px;
     }
-    .estilo-2 h3{
+
+    .estilo-2 h3 {
         font-size: 9px;
         width: 110px;
     }
-    .grid-item-1 img{
-        padding: 10px 30px; 
+
+    .grid-item-1 img {
+        padding: 10px 30px;
         width: 60%;
         height: 50%;
         margin-left: 80px;
     }
-    .grid.item-1 p{
+
+    .grid.item-1 p {
         font-size: 10px;
         margin-top: 0;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
-    .categorias{
+
+    .categorias {
         margin: 5px;
-        height:340px;
-    }
-    .categorias img{
-        width: 310px;
         height: 340px;
     }
-    .estilo-3{
+
+    .categorias img {
+        width: 310px;
+        height: 338px;
+    }
+
+    .estilo-3 {
         left: 10px;
         padding-bottom: 0;
-    } 
-    .estilo-3 h4{
+    }
+
+    .estilo-3 h4 {
         width: 300px;
         font-size: 14px;
     }
-    .estilo-3 p{
+
+    .estilo-3 p {
         margin-bottom: 0;
         width: 300px;
         font-size: 12px;
+    }
+}
+
+
+@media screen and (min-width:991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #832970;
+        width: 0;
+        height: 2px;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+
+
+}
+
+@media screen and (min-width:800px) {
+    .card:hover .card_info {
+        left: 100%;
+
+
+
+    }
+}
+
+@media screen and (min-width:700px) {
+    .card .card_info {
+
+        z-index: 90;
+
+    }
+
+    .card:hover .card_info {
+        left: -190%;
+        top: 0%;
+
+
     }
 }
 
