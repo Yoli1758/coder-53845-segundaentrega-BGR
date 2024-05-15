@@ -20,7 +20,8 @@ footer {
                 width: 80px;
             }
             p {
-                font-size: 12px;
+                
+                font-size: nth($sizetext,3);
                 width: 200px;
                 text-align: justify;
             }
@@ -49,23 +50,27 @@ footer {
             padding-left: 10px;
             h2 {
                 padding-top: 5px;
-                font-size: 16px;
+              
+                font-size: nth($sizetext,6);
             }
             nav {
                 a {
                     i {
-                        font-size: 20px;
+                     
+                        font-size: nth($sizetext,8);
                         padding-left: 5px;
                     }
                 }
             }
             h3 {
-                font-size: 16px;
+                
+                font-size: nth($sizetext,6);
                 margin-top: 15px;
                 display: inline-block;
             }
             .fa-truck-fast {
-                font-size: 16px;
+               
+                font-size: nth($sizetext,6);
                 color: blue;
             }
         }
@@ -99,7 +104,8 @@ footer {
             nav {
                 i {
                     margin-top: 5px;
-                    font-size: 25px;
+                   
+                    font-size: nth($sizetext,10);
                     padding-left: 5px;
                 }
             }
@@ -110,7 +116,8 @@ footer {
         bottom: 40px;
         right: 40px;
         color: #25d366;
-        font-size: 60px;
+       
+        font-size: nth($sizetext,13);
         &:hover {
             color: #28e86e;
         }

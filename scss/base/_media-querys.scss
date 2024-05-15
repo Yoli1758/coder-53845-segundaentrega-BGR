@@ -1,6 +1,6 @@
 @media screen and (max-width:1250px) {
     .container-contactanos {
-        // width: 80%;
+       
         padding: 10px 80px;
 
 
@@ -15,12 +15,27 @@
         .d-flex {
             div {
                 .form-control {
-                    width: 150px;
+                    width: 130px;
+                }
+            }
+        }
+
+        .login-boton {
+            font-size: 12px;
+            padding: 3px 10px;
+        }
+    }
+
+    //pagina de contacto
+    .container-contactanos {
+        .caja {
+            .informacion {
+                h2 {
+                    font-size: 16px;
                 }
             }
         }
     }
-
 
 }
 
@@ -39,9 +54,27 @@
         }
     }
 
+    //pagina de contacto
+    .container-contactanos {
+        .caja {
+            .formulario {
+                .contenedor-formulario {
+                    .caja-input {
+                        input {
+                            &::placeholder {
+
+                                font-size: 12px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:991px) {
 
     .navbar {
         .d-flex {
@@ -51,8 +84,31 @@
                 }
             }
         }
+
+        .login-boton {
+            font-size: 14px;
+            padding: 5px 15px;
+        }
     }
 
+    //pagina de contacto
+    .container-contactanos {
+        .caja {
+            .formulario {
+                .contenedor-formulario {
+                    .caja-input {
+                        input {
+                            &::placeholder {
+
+                                font-size: 11px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -63,11 +119,11 @@
         }
 
         .estilo-1 {
-            h2 {
+            h1 {
                 font-size: 18px;
             }
 
-            h3 {
+            h2 {
                 font-size: 14px;
             }
         }
@@ -112,6 +168,14 @@
         }
     }
 
+    .contenedor-bienvenido p {
+        font-size: 18px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
     .container-contactanos {
 
         .caja {
@@ -129,7 +193,7 @@
                         width: 100%;
 
                         input {
-                            &::placeholde {
+                            &::placeholder {
                                 font-size: 16px;
                             }
                         }
@@ -159,8 +223,6 @@
         }
     }
 }
-
-
 
 @media screen and (max-width:700px) {
     .estilo {
@@ -206,6 +268,14 @@
                 font-size: 12px;
             }
 
+        }
+    }
+
+    .contenedor-bienvenido p {
+        font-size: 16px;
+
+        span {
+            font-size: 18px;
         }
     }
 
@@ -279,9 +349,47 @@
             }
         }
     }
+
+    //pagina de contacto
+    .container-contactanos {
+        .caja {
+            .formulario {
+                .contenedor-formulario {
+                    .caja-input {
+                        input {
+                            &::placeholder {
+
+                                font-size: 11px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:500px) {
+    .contenedor-bienvenido {
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 14px;
+
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .categorias-productos {
+        h2 {
+            font-size: 18px;
+        }
+    }
 
     //pagina equipamiento
     .contenedor {
@@ -299,6 +407,15 @@
 }
 
 @media screen and (max-width:400px) {
+    .navbar {
+        .d-flex {
+            div {
+                .form-control {
+                    width: 200px;
+                }
+            }
+        }
+    }
 
     .estilo {
         img {
@@ -306,7 +423,7 @@
         }
 
         .estilo-1 {
-            h2 {
+            h1 {
                 font-size: 15px;
             }
 
@@ -317,7 +434,26 @@
         }
     }
 
+    .contenedor-bienvenido {
+        h2 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 13px;
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+
+
     .categorias-productos {
+        h2 {
+            font-size: 16px;
+        }
+
         .contenedor-categorias {
             .categorias {
                 margin: 5px;
@@ -332,8 +468,64 @@
 
     }
 
+
+    .main-nosotros {
+        .texto {
+            h1 {
+                .text1 {
+                    font-size: 35px;
+                }
+
+                .text2 {
+                    font-size: 35px;
+                }
+
+                .text3 {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+
     .container-contactanos {
         padding: 10px 50px;
+    }
+}
+
+
+@media screen and (min-width:991px) {
+    .nav-link {
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #832970;
+            width: 0;
+            height: 2px;
+            visibility: hidden;
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+    .nav-link.active {
+        &::before {
+            width: 100%;
+            visibility: visible;
+        }
+    }
+
+    .nav-link {
+        &:hover {
+            &::before {
+                width: 100%;
+                visibility: visible;
+            }
+        }
+
+
     }
 }
 
@@ -375,41 +567,4 @@
         }
     }
 
-
-}
-
-@media screen and (min-width:991px) {
-    .nav-link {
-
-        &::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #832970;
-            width: 0;
-            height: 2px;
-            visibility: hidden;
-            transition: 0.3s ease-in-out;
-        }
-    }
-
-    .nav-link.active {
-        &::before {
-            width: 100%;
-            visibility: visible;
-        }
-    }
-
-    .nav-link {
-        &:hover {
-            &::before {
-                width: 100%;
-                visibility: visible;
-            }
-        }
-
-
-    }
 }
